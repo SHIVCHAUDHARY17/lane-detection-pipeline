@@ -18,7 +18,7 @@
 
 ## Pipeline Architecture
 
-![Pipeline diagram](pipeline_diagram.svg)
+![Pipeline diagram](pipeline_diagram.png)
 
 ---
 
