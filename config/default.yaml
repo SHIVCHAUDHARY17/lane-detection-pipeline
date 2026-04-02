@@ -1,0 +1,49 @@
+video:
+  input_path: "data/solidWhiteRight.mp4"
+  output_path: "output/lane_output.mp4"
+  display: false
+
+color_mask:
+  white_threshold: 200
+  hls_yellow_lower: [15, 100, 100]
+  hls_yellow_upper: [35, 255, 255]
+
+canny:
+  blur_kernel: 5
+  low_threshold: 50
+  high_threshold: 150
+
+roi:
+  top_left_x: 0.45
+  top_left_y: 0.60
+  top_right_x: 0.55
+  top_right_y: 0.60
+
+hough:
+  rho: 1
+  theta_degrees: 1
+  threshold: 40
+  min_line_length: 100
+  max_line_gap: 50
+
+lane_lines:
+  min_slope: 0.4
+  max_slope: 2.0
+  line_color: [0, 255, 0]
+  line_thickness: 8
+  fill_color: [0, 200, 0]
+  fill_alpha: 0.3
+
+perspective:
+  src_top_left_x:     0.44
+  src_top_right_x:    0.56
+  src_bottom_left_x:  0.10
+  src_bottom_right_x: 0.90
+  src_top_y:          0.63
+  src_bottom_y:       0.95
+  dst_left_x:  0.25
+  dst_right_x: 0.75
+
+smoother:
+  alpha: 0.7
+  max_age: 10 
